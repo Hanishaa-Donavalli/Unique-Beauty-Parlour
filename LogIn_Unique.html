@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body{
+      background: black;
+    }
+    form{
+      color: white;
+      padding-left: 40%;
+    }
+    h1{
+      color: white;
+      padding-left: 39%;
+      font-size: 90px;
+      color: #7c003b;
+      font-family: "Abril Fatface";
+    }
+    #submit{
+      margin-left: 60px;
+      margin-top: 40px;
+      background-color: #7c003b;
+    }
+    #pass{
+      margin-right: 10px; 
+    }
+    #mail{
+      margin-right: 30px; 
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Log In</h1>
+
+  <form method=POST>
+    <div>
+      <label Id="mail" for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="your email"><br><br>
+
+      <label Id="pass" for="password">Password:</label>
+      <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+    </div><br>
+
+    <div>
+      <input id="submit" type="submit" value="Submit" />
+    </div>
+  </form>  
+
+</body>
+</html>

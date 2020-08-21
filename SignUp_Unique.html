@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <style type="text/css">
+  	body{
+  		background: black;
+  	}
+  	form{
+  		color: white;
+  		padding-left: 40%;
+  	}
+  	h1{
+  		color: white;
+  		padding-left: 39%;
+  		font-size: 90px;
+  		color: #7c003b;
+  		/*text-decoration: underline;*/
+  		font-family: "Abril Fatface";
+  	}
+    #submit{
+      margin-left: 60px;
+      margin-top: 40px;
+      background-color: #7c003b;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Sign Up</h1>
+
+  <form method=POST>
+    <div>
+      <label for="first-name">First Name:</label>
+      <input type="text" name="first-name" id="first-name" placeholder="John" required /><br><br>
+      <label for="last-name">Last Name:</label>
+      <input type="text" name="last-name" id="last-name" placeholder="Smith" required />
+    </div><br>
+    
+     <div>
+        <label for="radio-choice-1">Male</label>
+        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+
+        <label for="radio-choice-2">Female</label>
+        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+
+       <label for="radio-choice-3">Other</label>
+        <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+     </div><br>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="your email"><br><br>
+
+      <label for="password">Create Password:</label>
+      <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="your password" required title="5 to 10 characters">
+    </div><br>
+    <div>
+      <label for="select-choice">Birthday:</label>
+      <input type="date" name="dob">
+    </div><br>
+
+    <div>
+      <label for="checkbox">I agree to the terms and conditions</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+    </div><br>
+
+    <div>
+      <input id="submit" type="submit" value="Submit" />
+    </div>
+  </form>  
+
+</body>
+</html>
